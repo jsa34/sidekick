@@ -21,6 +21,7 @@ function initSitesController(dashboard, router) {
 		});
 	});
 
+
 	// Get a single site
 	router.get('/sites/:siteId', requirePermission('read'), async (request, response, next) => {
 		try {
